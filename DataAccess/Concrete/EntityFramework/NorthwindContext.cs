@@ -7,6 +7,9 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class NorthwindContext: DbContext
     {
+        /*
+         * Veritabanı tabloları ile kendi entity'lerimi ilişkilendirdiğimiz kısım
+         */
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=Car;Trusted_Connection=true");
